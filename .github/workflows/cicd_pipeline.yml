@@ -32,11 +32,7 @@ jobs:
         arguments: build
 
     - name: Build Docker image 
-<<<<<<< HEAD
       run: docker build -t kulwinder013/java-app-with-gradle:${{ github.sha }} .
-=======
-      run: docker build -t java-app-with-gradle .
->>>>>>> 45844e24e9ae4fdd9788b53b152b12dc83aa00c6
 
     - name: Login to DockerHub
       uses: docker/login-action@v2
