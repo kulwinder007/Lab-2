@@ -19,7 +19,7 @@ jobs:
         arguments: build
 
     - name: Build Docker image 
-      run: docker build -t kulwinder013/java-app-with-gradle
+      run: docker build -t java-app-with-gradle .
 
     - name: Login to DockerHub
       uses: docker/login-action@v2
